@@ -45,6 +45,9 @@ app.get("/get-users", async (req, res) => {
   });
 });
 
+app.get("/dummy",(req,res)=>{
+  res.send("Hello Dummy World")
+})
 app.listen(process.env.PORT, () => {
   console.log("app running "+process.env.PORT);
 });
