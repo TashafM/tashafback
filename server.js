@@ -46,5 +46,5 @@ app.get("/get-users", async (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log("app running");
+  console.log("app running "+process.env.PORT);
 });
